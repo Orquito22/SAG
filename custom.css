@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Russo+One&display=swap');
+
+/*NAV*/
+.navbar-brand h1 {
+    border-right: 1px solid black; /* Agrega un borde derecho */
+    padding-right: 10px; /* Espaciado entre "SAG" y la línea divisoria */
+    margin-right: 10px; /* Espaciado entre la línea divisoria y el resto de los elementos */
+}
+@media (max-width: 992px){
+    .navbar-brand h1{
+        border: none;
+    }
+}
+
+
+
+/*Imagen de fondo portada*/
+.logo{
+    position: fixed;
+    border-radius: 99%;
+    bottom: 0;
+    right: 0; 
+    z-index: 999;
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+}
+.wapp{
+    position: fixed;
+    border-radius: 99%;
+    bottom: 0;
+    right: 0; 
+    z-index: 999;
+    margin: 10px 10px 180px 10px ;
+    width: 100px;
+    height: 100px;
+}
+
+.fondo{
+    background-image: url('./statics/portada.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 90vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.color-overlay{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.texto-container {
+    text-align: center; /* Alinea el texto al centro */
+    
+}
+.texto-portada{
+    font-family: 'Russo One', sans-serif;
+    font-size: 5rem;
+}
+.bajada-texto-portada{
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 2rem;
+    font-weight: 700;
+}
+.texto-portada {
+    opacity: 0; /* Inicialmente oculto */
+    animation: aparecerDesdeCentro 1s ease-in-out forwards; /* Animación */
+}
+.bajada-texto-portada{
+    opacity: 0; /* Inicialmente oculto */
+    animation: aparecerDesdeCentro 1s ease-in-out forwards; /* Animación */
+}
+@keyframes aparecerDesdeCentro {
+    from {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px){
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .wapp{
+        width: 66px;
+        height: 66px;
+        margin: 10px 10px 130px 10px ;
+    }
+    .fondo{
+        min-height: 40vh;
+    }
+    .texto-portada{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    .bajada-texto-portada{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .wapp{
+        width: 33px;
+        height: 33px;
+        margin: 10px 10px 80px 10px ;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*Sombras para la galeria de fotos*/
+.service{
+    box-shadow: 0 0 50px 10px rgb(255, 255, 255);
+}
+
+/*Sombras para las tarjetas en servicios*/
+.card{
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+
+}
+
+/* Formulario contacto */
+
+.form-area {
+	padding-top: 2%;
+    padding-bottom: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.left {
+	background: blueviolet;
+	padding: 180px 49px;
+}
+.left h2 {
+	font-family: Montserrat;
+	color: #fff;
+	font-weight: 300;
+	font-size: 38px;
+}
+.left h2 span {
+	font-weight: 100;
+}
+.single-form{
+    background: #fff;
+}
+.right {
+	padding: 50px 30px;
+	position: relative;
+}
+.right i {
+	position: absolute;
+	font-size: 80px;
+	left: -27px;
+	top: 40%;
+	color: #fff;
+}
+.form-control {
+	border: 2px solid #000;
+}
+.right button {
+	border: none;
+	
+	background: #55da86;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.right button:hover{
+    background-color: #252525;
+}
+
+
+/*responsive*/
+
+@media (min-width:768px) and (max-width:991px){
+    .right i {
+	top: -52px;
+	transform: rotate(90deg);
+	left: 50%;
+}
+}
+
+@media (max-width:767px){
+    .left {
+  padding: 90px 15px;
+  text-align: center;
+}
+.left h2 {
+  font-size: 25px;
+}
+.right {
+  padding: 25px;
+}
+.right i {
+  top: -52px;
+  transform: rotate(90deg);
+  left: 46%;
+}
+    .right button {
+	width: 150px;
+	padding: 12px 0;
+}
+    
+}
+/*---------*/
+
+/* Info de contacto*/
+
+.map-area{
+    width: 30vw;
+    height: 19vh;
+    background-color: black;
+    box-shadow: rgb(55, 186, 206) 5px 5px 15px;
+}
+
+.map-area iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* ---- */
