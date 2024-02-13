@@ -11,12 +11,11 @@
 
 <body>
     <!-- Nav -->
-    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <h1><img src="statics\boxes.svg" alt="Logo" width="60" height="48"
-                        class="d-inline-block align-text-top">
+                <h1><img src="statics\boxes.svg" alt="Logo" class="d-inline-block align-text-top logo-nav">
                     SAG
                 </h1>
             </a>
@@ -26,23 +25,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <h3>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactanos">CONTACTANOS</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactanos">CONTACTANOS</a>
+                        </li>
+                    </ul>
                 </h3>
             </div>
 
@@ -50,7 +49,7 @@
     </nav>
 
     <!-- Fondo -->
-    <div class="fondo" id="home" >
+    <div class="fondo" id="home">
 
         <div class="color-overlay">
             <a class="align-middle"
@@ -68,11 +67,17 @@
     </div>
 
     <!-- Nosotros -->
-    <section class=".container-fluid p-3 mb-2 bg-dark" id="nosotros" style="padding-top: 70px;">
+    <section class="container-fluid p-3 mb-2 bg-dark" id="nosotros" style="padding-top: 70px;">
         <div class="row">
-            <img src="statics\nosotros.svg" class="img-fluid rounded float-end" alt="">
+            <picture>
+                <source media="(min-width: 500px)" srcset="statics\nosotros.svg">
+                <img src="./statics/nosotros-cel.svg" class="img-fluid rounded float-end" alt="">
+            </picture>
         </div>
     </section>
+
+
+
     <!-- Servicios -->
     <section class="container" id="servicios" style="padding-top: 70px;">
         <div class="container p-2">
@@ -117,7 +122,7 @@
         </div>
     </section>
     <!-- Galeria -->
-    <section class=".container-fluid p-5 mb-2 bg-black text-white" id="portfolio">
+    <section class=".container-fluid p-5 mb-2 bg-black text-white galeria" id="portfolio">
         <div class="container" style="padding-top: 30px;">
             <h1><span>PORTFOLIO</span></h1>
         </div>
@@ -260,8 +265,9 @@
 
 
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./custom.js">
 </body>
 
 </html>
