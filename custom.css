@@ -45,7 +45,7 @@
     background-image: url('./statics/portada.svg');
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+    min-height: 100vh;
     position: relative;
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -114,10 +114,7 @@
     }
 }
 @media (max-width: 500px){
-    .galeria{
-        height: 80vh;
-    }
-    
+       
     .navbar-brand h1 {
         font-size: 1.5rem;
     }
@@ -162,11 +159,35 @@
         height: 62px;
     }
 }
+/*-------*/
 
-/*Sombras para la galeria de fotos*/
-.service{
-    box-shadow: 0 0 50px 10px rgb(255, 255, 255);
+/*Nosotros*/
+.nosotros{
+    background-image: url('./statics/nosotros.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
 }
+@media (max-width: 500px){
+    .nosotros{
+        background-image: url(./statics/nosotros-cel.svg);
+    }
+}
+/*------*/
+/*Galeria de fotos*/
+
+.slide img{
+    height: 70vh;
+    
+}
+
+@media (max-width: 576px){
+    .slide img{
+        height: 50vh;
+    }
+}
+
 
 /*Sombras para las tarjetas en servicios*/
 .card{
@@ -228,9 +249,6 @@
 .right button:hover{
     background-color: #252525;
 }
-
-
-/*responsive*/
 
 @media (min-width:768px) and (max-width:991px){
     .right i {
