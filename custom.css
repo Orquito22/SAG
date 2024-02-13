@@ -113,7 +113,7 @@
         display: none;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 576px){
        
     .navbar-brand h1 {
         font-size: 1.5rem;
@@ -159,6 +159,12 @@
         height: 62px;
     }
 }
+
+@media (max-width: 300px){
+    .fondo{
+        background-image: url('./statics/portada-cel-xs.svg');
+    }
+}
 /*-------*/
 
 /*Nosotros*/
@@ -169,11 +175,17 @@
     height: 100vh;
     
 }
-@media (max-width: 500px){
+@media (max-width: 576px){
     .nosotros{
         background-image: url(./statics/nosotros-cel.svg);
     }
 }
+@media (max-width: 300px){
+    .nosotros{
+        background-image: url(./statics/nosotros-cel-xs.svg);
+    }
+}
+
 /*------*/
 /*Galeria de fotos*/
 
@@ -187,7 +199,7 @@
         height: 50vh;
     }
 }
-@media (max-width: 350px){
+@media (max-width: 300px){
     .slide img{
         height: 25vh;
     }
