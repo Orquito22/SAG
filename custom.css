@@ -187,6 +187,12 @@
         height: 50vh;
     }
 }
+@media (max-width: 350px){
+    .slide img{
+        height: 38vh;
+    }
+}
+
 
 
 /*Sombras para las tarjetas en servicios*/
