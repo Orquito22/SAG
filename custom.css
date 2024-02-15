@@ -215,7 +215,7 @@
 
 @media (max-width: 576px){
     .slide img{
-        height: 50vh;
+        height: 30vh;
     }
 }
 @media (max-width: 300px){
