@@ -164,21 +164,46 @@
 /*Nosotros*/
 .nosotros{
     background-image: url('./statics/nosotros.svg');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    
+    
     
 }
-@media (max-width: 576px){
-    .nosotros{
-        background-image: url(./statics/nosotros-cel.svg);
+.texto-nosotros,.texto-nosotros-titulo {
+    font-family: 'Russo one', sans serif;
+    color: white;
+}
+.texto-nosotros-titulo{
+    font-size: calc(16px + 4vw);
+    line-height: 1.2;
+}
+.texto-nosotros{
+    font-size: calc(10px + 1.2vw);
+}
+
+/* @media (max-width: 768px){
+    .texto-nosotros,.texto-nosotros-a{
+       font-size: calc(3.5em + 3.3vw) ;
     }
 }
-@media (max-width: 300px){
-    .nosotros{
-        background-image: url(./statics/nosotros-cel-xs.svg);
-    }
+ @media (max-width: 576px){
+    .texto-nosotros,.texto-nosotros-a{
+        font-size: calc(1.2rem + 3.3vw) ;
+     }
 }
+
+*/ @media (max-width: 300px){
+    .texto-nosotros-titulo{
+        font-size: calc(13px + 1.2vw);
+        font-weight: 500;
+    }
+    .texto-nosotros{
+        font-size: calc(8px + 1.2vw) ;
+     }
+  
+
+}  
 
 /*------*/
 /*Galeria de fotos*/
