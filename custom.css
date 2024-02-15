@@ -164,7 +164,7 @@
 /*Nosotros*/
 .nosotros{
     background-image: url('./statics/nosotros.svg');
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     height: 100vh;
     
