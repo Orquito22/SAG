@@ -68,6 +68,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 }
 // else just display the message
 else {
+    echo '<meta http-equiv="refresh" content="5;url=https://sag-estudio.com.ar/">';
     echo $responseArray['message'];
 }
 ?>
