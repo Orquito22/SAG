@@ -42,7 +42,7 @@
 }
 
 .fondo{
-    background-image: url('./statics/portada2.webp');
+    background-image: url('./statics/portadac.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -338,7 +338,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./statics/contacto.webp');
+    background-image: url('./statics/contactoc.jpg');
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.5; /* Opacidad solo aplicada a la imagen de fondo */
