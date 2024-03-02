@@ -166,39 +166,6 @@
 }
 
 
-/* PARA IPHONE */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .fondo{
-        background-attachment: scroll;
-    }
-    
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
- .fondo{
-        background-attachment: scroll;
-    }
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
- .fondo{
-        background-attachment: scroll;
-    }
-}
 
 /*-------*/
 
@@ -410,4 +377,49 @@
     width: 100%;
     height: 100%;
     border: none;
+}
+
+
+/* PARA IPHONE */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .fondo{
+        background-attachment: scroll;
+    }
+    .info{
+        background-attachment: scroll;
+    }
+    
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+ .fondo{
+        background-attachment: scroll;
+    }
+    .info{
+        background-attachment: scroll;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+ .fondo{
+        background-attachment: scroll;
+    }
+    .info{
+        background-attachment: scroll;
+    }
 }
