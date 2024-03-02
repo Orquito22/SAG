@@ -113,7 +113,8 @@
     }
 }
 @media (max-width: 576px){
-       
+   
+    
     .navbar-brand h1 {
         font-size: 1.5rem;
     }
@@ -126,6 +127,7 @@
         font-size: calc(1.2rem + 3.3vw);
     }
     .fondo{
+    
         height: 60vh;
         padding-top: 0px;
         margin-top: 0px;
@@ -155,11 +157,49 @@
     }
 }
 
+
+
 @media (max-width: 300px){
     .fondo{
         background-image: url('./statics/portada-cel-xs.webp');
     }
 }
+
+
+/* PARA IPHONE */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .fondo{
+        background-attachment: scroll;
+    }
+    
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+ .fondo{
+        background-attachment: scroll;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+ .fondo{
+        background-attachment: scroll;
+    }
+}
+
 /*-------*/
 
 /*Nosotros*/
