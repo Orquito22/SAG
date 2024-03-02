@@ -389,7 +389,7 @@
     .fondo{
         background-attachment: scroll;
     }
-    .info{
+    .info::before{
         background-attachment: scroll;
     }
     
@@ -404,7 +404,7 @@
  .fondo{
         background-attachment: scroll;
     }
-    .info{
+    .info::before{
         background-attachment: scroll;
     }
 
@@ -419,7 +419,7 @@
  .fondo{
         background-attachment: scroll;
     }
-    .info{
+    .info::before{
         background-attachment: scroll;
     }
 }
